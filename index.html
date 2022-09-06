@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,11 +7,74 @@
     <title>Cuidadoras 365 - Tu portal de cuidadoras, niñeras y empledas del hogar.</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Oxanium&display=swap" rel="stylesheet"></head>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Oxanium&display=swap" rel="stylesheet">
+    <link rel="preload" href="css/normalize.css" as="style">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="preload" href="css/styles.css" as="style">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
 <body>
     <header>
+        <!--<img src="img/elderly-care-footer-bg-150x150.jpg" alt="título">-->
         <h1 class="titulo">Cuidadoras 365</h1>
     </header>
+
+    <section>
+        <h2 class="titulo">Portal de exclusivo de cuidadoras, empleadas del hogar y canguros</h2>
+    </section>
+    <div class="nav-bg">
+        <nav class="navegacion-principal contenedor">
+            <a href="index.html">Inicio</a>
+            <a href="#">Necesito un servicio</a>
+            <a href="#">Necesito un empleo</a>
+        </nav>    
+    </div>
+    <main>
+        <h3>¿Necesitas una cuidadora, niñera o empleada del hogar?</h3>
+        <section> 
+            <h4>Escoge entre varios perfiles el que mejor se adapte a tus necesidades</h4>
+            <p>Aquí podrás acceder a su perfil, ver su experiencia profesional, incluso contactar con la persona antes de seleccionarla</p>
+            <p>Sin trucos, seleccionas el tipo de servicio que necesitas, la localidad y en pocos minutos podrás encontrar la persona que necesitas.</p>
+        </section>
+        <section>
+            <h3>¿Eres empleada del hogar, cuidadora o niñera?</h3>
+            <p>En este portal podrás acceder a ofertas directamente</p>
+        </section>
+    </main>
+    <section>
+        <p>Todo esto está muy bien, pero tengo más dudas</p>
+        <form action="">
+            <fieldset>
+                <legend>
+                    Contacta con nosotros y te ayudaremos en lo que necesites
+                </legend>
+                <div>
+                    <label for="">Nombre</label>
+                    <input type="text" placeholder="Tu nombre">
+                </div>
+                <div>
+                    <label for="">Teléfono</label>
+                    <input type="tel" placeholder="Tu Teléfono">
+                </div>
+                <div>
+                    <label for="">Correo</label>
+                    <input type="email" placeholder="Tu correo">
+                </div>
+                <div>
+                    <label for="">Necesito más información sobre</label>
+                    <input type="radio" name="tipo">Servicios
+                    <input type="radio" name="tipo">Empleo
+                </div>
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </fieldset>
+        </form>
+    </section>
+    <footer>
+        <p>Todos los derechos reservados. Cuidadoras365</p>
+    </footer>
+  
     
 </body>
 </html>
