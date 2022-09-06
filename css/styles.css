@@ -1,0 +1,17 @@
+:root {
+    --fuenteTitulos: 'Comfortaa';
+    --fuentetextos: 'Oxanium' ;
+    --Primario: rgb(252, 152, 4);
+    --Secundario: rgb(50, 204, 12);
+    --Terciario: rgb(34, 158, 207);
+    --blanco: #ffffcc;
+    --negro: #2c2c2c;
+}
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
