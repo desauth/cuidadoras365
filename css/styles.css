@@ -6,6 +6,7 @@
     --Terciario: rgb(34, 158, 207);
     --blanco: #ffffcc;
     --negro: #2c2c2c;
+    --negro_transparente:rgba(0,0,0, 0.6);
 }
 html {
     box-sizing: border-box;
@@ -23,14 +24,11 @@ body {
 h1 {
     font-size: 3.8rem;
 }
-h2 {
-    font-size: 2.8rem;
-}
 h3 {
-    font-size: 2.5rem;
+    font-size: 2.1rem;
 }
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
 }
 .texto {
     font-family: var(--fuentetextos);
@@ -46,7 +44,7 @@ h4 {
     background-color: var(--Primario);
     text-align: center;
     border-radius: 1rem;
-    padding: auto;
+    color:var(--blanco);
 }
 .nav-bg {
     background-color: var(--Secundario);
@@ -71,6 +69,29 @@ a:hover {
 .contenedor__navegacion {
     max-width: 120rem;
     margin: 0 auto;
+}
+.contenedor__header {
+    background-image: url("../img/elderly-care-footer-bg-768x432.jpg");
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: cover;
+    min-height: 26rem;
+    padding-top: 50%;
+}
+@media (min-width: 480px) {
+    .contenedor__header {
+        background-image: url("../img/elderly-care-footer-bg-1536x864.jpg");
+    }    
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+.contenedor__titulo {
+    background-color: var(--negro_transparente);
+    padding: .3rem;
+}
+.contenedor__titulo h2 {
+    font-size:medium;
 }
 @media (min-width: 480px) {
     .navegacion-principal{
