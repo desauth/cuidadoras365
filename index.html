@@ -14,56 +14,72 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <header>
+    <header class="contenedor contenedor__header">
         <!--<img src="img/elderly-care-footer-bg-150x150.jpg" alt="título">-->
         <h1 class="titulo">Cuidadoras 365</h1>
     </header>
 
-    <section>
+    <section class="contenedor">
         <h2 class="titulo">Portal de exclusivo de cuidadoras, empleadas del hogar y canguros</h2>
     </section>
     <div class="nav-bg">
-        <nav class="navegacion-principal contenedor">
+        <nav class="navegacion-principal contenedor__navegacion">
             <a href="index.html">Inicio</a>
             <a href="#">Necesito un servicio</a>
             <a href="#">Necesito un empleo</a>
         </nav>    
     </div>
     <main>
-        <h3>¿Necesitas una cuidadora, niñera o empleada del hogar?</h3>
+        <h3 class="titulo">¿Necesitas una cuidadora, niñera o empleada del hogar?</h3>
         <section> 
-            <h4>Escoge entre varios perfiles el que mejor se adapte a tus necesidades</h4>
-            <p>Aquí podrás acceder a su perfil, ver su experiencia profesional, incluso contactar con la persona antes de seleccionarla</p>
-            <p>Sin trucos, seleccionas el tipo de servicio que necesitas, la localidad y en pocos minutos podrás encontrar la persona que necesitas.</p>
+            <h4 class="texto">Escoge entre varios perfiles el que mejor se adapte a tus necesidades</h4>
+            <p class="texto">Aquí podrás acceder a su perfil, ver su experiencia profesional, incluso contactar con la persona antes de seleccionarla</p>
+            <p class="texto">Sin trucos, seleccionas el tipo de servicio que necesitas, la localidad y en pocos minutos podrás encontrar la persona que necesitas.</p>
         </section>
+        <h3 class="titulo">¿Eres empleada del hogar, cuidadora o niñera?</h3>
         <section>
-            <h3>¿Eres empleada del hogar, cuidadora o niñera?</h3>
-            <p>En este portal podrás acceder a ofertas directamente</p>
+            <h4 class="texto">En este portal podrás acceder a ofertas directamente</h4>
+            <p class="texto">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem voluptatibus delectus, voluptas atque ad rerum vel velit. Similique, quae, temporibus, illo ullam dolorem vel laboriosam sed illum necessitatibus quibusdam voluptates!</p>
         </section>
     </main>
-    <section>
-        <p>Todo esto está muy bien, pero tengo más dudas</p>
-        <form action="">
+    <section class="contacto">
+        <p class="texto">Todo esto está muy bien, pero tengo más dudas</p>
+        <form class="formulario" action="">
             <fieldset>
                 <legend>
                     Contacta con nosotros y te ayudaremos en lo que necesites
                 </legend>
-                <div>
-                    <label for="">Nombre</label>
-                    <input type="text" placeholder="Tu nombre">
+                <div class="campo">
+                    <label class="campo__label" for="nombre">Nombre</label>
+                    <input 
+                        class="campo__field" 
+                        type="text" 
+                        placeholder="Tu nombre"
+                        id="nombre"
+                    >
                 </div>
-                <div>
-                    <label for="">Teléfono</label>
-                    <input type="tel" placeholder="Tu Teléfono">
+                <div class="campo">
+                    <label class="campo__label" for="telefono">Teléfono</label>
+                    <input 
+                        class="campo__field" 
+                        type="tel" 
+                        placeholder="Tu Teléfono"
+                        id="telefono"                        
+                    >
                 </div>
-                <div>
-                    <label for="">Correo</label>
-                    <input type="email" placeholder="Tu correo">
+                <div class="campo">
+                    <label class="campo__label" for="email">Correo</label>
+                    <input 
+                        class="campo__field" 
+                        type="email" 
+                        placeholder="Tu correo"
+                        id="email"
+                    >
                 </div>
-                <div>
-                    <label for="">Necesito más información sobre</label>
-                    <input type="radio" name="tipo">Servicios
-                    <input type="radio" name="tipo">Empleo
+                <div class="campo campo--radio">
+                <label class="campo__label--informacion" for="">Necesito más información sobre</label>
+                    <input class="campo__radio" type="radio" name="tipo">Servicios
+                    <input class="campo__radio" type="radio" name="tipo">Empleo
                 </div>
                 <div>
                     <input type="submit" value="Enviar">
@@ -72,7 +88,7 @@
         </form>
     </section>
     <footer>
-        <p>Todos los derechos reservados. Cuidadoras365</p>
+        <p class="texto">Todos los derechos reservados. <span class="titulo fuente__700">Cuidadoras365.es</span></p>
     </footer>
   
     

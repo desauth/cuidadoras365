@@ -17,14 +17,14 @@ body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-h1, h2, h3, h4 {
+/*h1, h2, h3, h4 {
     font-family: var(--fuenteTitulos);
-}
+}*/
 h1 {
     font-size: 3.8rem;
 }
 h2 {
-    font-size: 3rem;
+    font-size: 2.8rem;
 }
 h3 {
     font-size: 2.5rem;
@@ -32,14 +32,21 @@ h3 {
 h4 {
     font-size: 1.5rem;
 }
-p {
+.texto {
     font-family: var(--fuentetextos);
 }
 .titulo {
-    background-color: var(--Primario);
+    font-family: var(--fuenteTitulos);
     margin: 0.5rem auto;
+}
+.fuente__700 {
+    font-weight: bold;
+}
+.contenedor {
+    background-color: var(--Primario);
     text-align: center;
     border-radius: 1rem;
+    padding: auto;
 }
 .nav-bg {
     background-color: var(--Secundario);
@@ -61,7 +68,7 @@ a:hover {
     background-color: var(--Terciario);
     color: var(--blanco);
 }
-.contenedor {
+.contenedor__navegacion {
     max-width: 120rem;
     margin: 0 auto;
 }
@@ -70,4 +77,46 @@ a:hover {
         flex-direction: row;
         justify-content: space-between;    
     }
+}
+
+/** Contacto**/
+.contacto {
+    font-family: var(--fuentetextos);
+    margin: 0 auto;
+}
+.contacto p {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.formulario {
+    background-color: var(--Terciario);
+    width: 95%;
+    border-radius: 1rem;
+    padding: 2rem;
+}
+.campo {
+    margin: 0 auto .5rem auto;
+    display: flex;
+    text-align: justify;
+}
+.campo--radio {
+    display: grid;
+    grid-template-columns: 5rem;
+    gap: .5rem;
+}
+.campo__label {
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 1rem;
+}
+.campo__label--informacion {
+    margin-top: 0.5rem;
+    grid-area: 1 / 1 / span 1 / span 2;
+}
+.campo__field {
+    flex: 1;
+}
+.formulario fieldset {
+    border: none;
 }
