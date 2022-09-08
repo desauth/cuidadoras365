@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="es-es">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cuidadoras 365 - Tu portal de cuidadoras, niñeras y empledas del hogar.</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon.gif">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Oxanium&display=swap" rel="stylesheet">
@@ -55,6 +56,7 @@
                         type="text" 
                         placeholder="Tu nombre"
                         id="nombre"
+                        required
                     >
                 </div>
                 <div class="campo">
@@ -63,7 +65,8 @@
                         class="campo__field" 
                         type="tel" 
                         placeholder="Tu Teléfono"
-                        id="telefono"                        
+                        id="telefono"
+                        required                        
                     >
                 </div>
                 <div class="campo">
@@ -76,9 +79,11 @@
                     >
                 </div>
                 <div class="campo campo--radio">
-                <label class="campo__label--informacion" for="">Necesito más información sobre</label>
-                    <input class="campo__radio" type="radio" name="tipo">Servicios
-                    <input class="campo__radio" type="radio" name="tipo">Empleo
+                    <label class="campo__label--informacion" for="">Necesito más información sobre</label>
+                    <!--<label for="tipo"> -->
+                        <input class="campo__radio" type="radio" name="tipo" required>Servicios
+                        <input class="campo__radio" type="radio" name="tipo" required>Empleo
+                    <!--</label> -->
                 </div>
                 <div>
                     <input type="submit" value="Enviar">
