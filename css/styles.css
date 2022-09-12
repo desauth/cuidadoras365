@@ -18,18 +18,9 @@ body {
 *, *:before, *:after {
     box-sizing: inherit;
 }
-/*h1, h2, h3, h4 {
-    font-family: var(--fuenteTitulos);
-}*/
-h1 {
-    font-size: 3.8rem;
-}
-h3 {
-    font-size: 2.1rem;
-}
-h4 {
-    font-size: 1.8rem;
-}
+
+/*HOME*/
+
 .texto {
     font-family: var(--fuentetextos);
 }
@@ -39,6 +30,71 @@ h4 {
 }
 .fuente__700 {
     font-weight: bold;
+}
+.nav-principal {
+    display: flex;
+    margin: 1rem 0;
+    width: 100%;
+}
+.home {
+    flex: 0 0 7.2rem;
+}
+.buscar {
+    flex: 1;
+    background-image: url(/img/nav/barra-búsqueda_04.gif);
+    background-repeat: repeat-x;
+    background-size: contain;
+    vertical-align:top;
+    height: 4.2rem;
+}
+.cierre {
+    flex: 0 0 2rem;
+}
+.juntar {
+    margin-left: -.4rem;
+}
+.campo__busqueda {
+    border: none;
+    padding-top: .5rem;
+}
+.boton__enviar {
+    border: none;    
+}
+.nav-bg {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.nav-bg a {
+    text-decoration: none;
+    background-color: var(--Secundario);
+    padding: 1rem;
+    border-radius: .5rem;
+    margin: 1rem auto;
+}
+.nav-bg a:hover {
+    background-color: var(--Primario);
+    font-weight: bold;
+    color: var(--blanco);
+}
+.nav-profile {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2rem;
+}
+/*h1, h2, h3, h4 {
+    font-family: var(--fuenteTitulos);
+}*/
+
+/* Antigua web index.html
+h1 {
+    font-size: 3.8rem;
+}
+h3 {
+    font-size: 2.1rem;
+}
+h4 {
+    font-size: 1.8rem;
 }
 .contenedor {
     background-color: var(--Primario);
@@ -100,7 +156,9 @@ a:hover {
     }
 }
 
-/** Contacto**/
+*/
+
+/** Contacto**/ /*Antigua web
 .contacto {
     font-family: var(--fuentetextos);
     margin: 0 auto;
@@ -141,3 +199,4 @@ a:hover {
 .formulario fieldset {
     border: none;
 }
+*/
