@@ -96,7 +96,7 @@ body {
 .border-radius {
     border-radius: 1rem;
     background-color: var(--blanco);
-    margin: 1rem;
+    margin: 1rem auto;
 }
 .border-radius:hover {
     background-color: var(--Terciario);
