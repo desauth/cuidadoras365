@@ -61,11 +61,13 @@ body {
     border: none;    
 }
 .nav-bg {
-    display: flex;
+    display: grid;
+    grid-template-columns:repeat(3, 1fr);
     justify-content: space-evenly;
     width: 100%;
 }
 .nav-bg a {
+    grid-row: 2 / 3;
     text-decoration: none;
     background-color: var(--Secundario);
     padding: 1rem;
@@ -76,6 +78,28 @@ body {
     background-color: var(--Primario);
     font-weight: bold;
     color: var(--blanco);
+}
+.nav-bg img {
+    margin: 0 auto;
+}
+.nav-usuario {
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    /*background-color: var(--negro);*/
+    text-align: center;
+    border:rgb(34, 158, 207);
+    border-style:solid;
+    border-radius: 1rem;
+    margin: 0.5rem 1rem;
+}
+.border-radius {
+    border-radius: 1rem;
+    background-color: var(--blanco);
+    margin: 1rem;
+}
+.border-radius:hover {
+    background-color: var(--Terciario);
 }
 .nav-profile {
     display: flex;
