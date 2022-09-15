@@ -14,8 +14,8 @@
     <link rel="preload" href="css/styles.css" as="style">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
-    <header>
+<body class="contenedor-principal">
+    <header class="contenedor-header">
         <section class="nav-principal">
             <div class="home">
                 <a href="#"><img src="/img/nav/barra-búsqueda_01.gif" alt="Cuidadoras365"></a>
@@ -35,25 +35,24 @@
                 <img class="juntar" src="/img/nav/barra-búsqueda_05.gif" alt="">
             </div>
         </section>
-
     </header>
     <nav class="contenedor-servicios texto">
         <div class="nav-bg">
-            <!--<div class="contenedor-servicios__cuidadora"> -->
-                <img src="img/nav/cuidadora.gif" alt="cuidadoras">
-                <a href="#">Cuidadoras</a>
-            <!--</div> -->
-            <!--<div class="contenedor-servicios__hogar"> -->
-                <img src="img/nav/hogar.gif" alt="Empleadas del hogar">
-                <a href="#">Empleadas del hogar</a>
-            <!--</div> -->
-            <!--<div class="contenedor-servicios__niñera"> -->
-                <img src="img/nav/niñera.gif" alt="niñera">
-                <a href="#">Niñeras</a>
-            <!--</div> -->
+            <div class="nav-bg-servicio">
+                <img class="nav-bg__img" src="img/nav/cuidadora.gif" alt="cuidadoras">
+                <a class="nav-bg__a" href="#">Cuidadoras</a>
+            </div>
+            <div class="nav-bg-servicio">
+                <img class="nav-bg__img" src="img/nav/hogar.gif" alt="Empleadas del hogar">
+                <a class="nav-bg__a" href="#">Empleadas <br>del hogar</a>
+            </div>
+            <div class="nav-bg-servicio">
+                <img class="nav-bg__img" src="img/nav/niñera.gif" alt="niñera">
+                <a class="nav-bg__a" href="#">Niñeras</a>
+            </div>
         </div>
     </nav>    
-    <main>
+    <main class="contenedor-usuario">
         <section class="nav-usuario">
             <div class="nav-usuario__1 border-radius">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="100" height="100" viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -119,16 +118,17 @@
                   </svg>
             </div>
         </section>
-        <p class="texto">
-            Lorem ipsum dolor, sit amet consectetur.
-        </p>
     </main>
-    <footer>
+    <footer class="contenedor-footer">
+        <p class="descripcion texto">
+            Desliza el dedo para ver más perfiles.
+        </p>
         <div class="nav-profile">
-            <img src="/img/nav/favoritos_off.gif" alt="favoritos">
-            <img src="/img/nav/correo_off.gif" alt="correo">
-            <img src="/img/nav/perfil_off.gif" alt="perfil">
+            <img src="/img/nav/favoritos_off.gif" alt="favoritos"><a href="#" class="texto nav-profile__enlace">Favoritos</a>
+            <img src="/img/nav/correo_off.gif" alt="correo"><a href="#" class="texto nav-profile__enlace">Mensajes</a>
+            <img src="/img/nav/perfil_off.gif" alt="perfil"><a href="#" class="texto nav-profile__enlace">Yo</a>
         </div>
+        <h5 class="texto centrar">Cuidadoras365 - Todos los derechos reservados</h3>
     </footer>
 </body>
 </html>

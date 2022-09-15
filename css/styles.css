@@ -20,7 +20,9 @@ body {
 }
 
 /*HOME*/
-
+html, body {
+    min-height: 100%;
+}
 .texto {
     font-family: var(--fuentetextos);
 }
@@ -31,9 +33,26 @@ body {
 .fuente__700 {
     font-weight: bold;
 }
+.contenedor-principal {
+    display: grid;
+    grid-template-rows: 8% 17% 65% 10%;
+    align-items: center;
+}
+.contenedor-header {
+    grid-row: 1 / 2;
+}
+.contenedor-servicios {
+    grid-row: 2 / 3;
+}
+.contenedor-usuario {
+    grid-row: 3 / 4;
+}
+.contenedor-footer {
+    grid-row: 4 / 5 ;
+}
 .nav-principal {
     display: flex;
-    margin: 1rem 0;
+    margin: 0 auto;
     width: 100%;
 }
 .home {
@@ -53,6 +72,9 @@ body {
 .juntar {
     margin-left: -.4rem;
 }
+.centrar {
+    text-align: center;
+}
 .campo__busqueda {
     border: none;
     padding-top: .5rem;
@@ -64,34 +86,53 @@ body {
     display: grid;
     grid-template-columns:repeat(3, 1fr);
     justify-content: space-evenly;
-    width: 100%;
+    width: 95%;
+    margin: 0 1rem;
+    gap: 1rem;
 }
-.nav-bg a {
+.nav-bg-servicio {
+    display: grid;
+    align-items: center;
+    border:solid;
+    border-width: 1px;
+    border-radius: 2rem;
+    border-color: var(--Terciario);
+    min-height: 12rem;
+}
+.nav-bg__a {
     grid-row: 2 / 3;
     text-decoration: none;
+    text-align: center;
     background-color: var(--Secundario);
     padding: 1rem;
-    border-radius: .5rem;
-    margin: 1rem auto;
+    border-radius: 2rem;
+    margin: 0.5rem;
+    transition: background-color .5s ease;
 }
-.nav-bg a:hover {
+.nav-bg__a:hover {
     background-color: var(--Primario);
     font-weight: bold;
     color: var(--blanco);
 }
-.nav-bg img {
+.nav-bg__img {
     margin: 0 auto;
 }
+
 .nav-usuario {
     display:grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
-    /*background-color: var(--negro);*/
     text-align: center;
     border:rgb(34, 158, 207);
     border-style:solid;
     border-radius: 1rem;
     margin: 0.5rem 1rem;
+}
+.descripcion {
+    margin: 2rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .border-radius {
     border-radius: 1rem;
@@ -104,123 +145,13 @@ body {
 .nav-profile {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin: 0 2rem;
 }
-/*h1, h2, h3, h4 {
-    font-family: var(--fuenteTitulos);
-}*/
-
-/* Antigua web index.html
-h1 {
-    font-size: 3.8rem;
-}
-h3 {
-    font-size: 2.1rem;
-}
-h4 {
-    font-size: 1.8rem;
-}
-.contenedor {
-    background-color: var(--Primario);
-    text-align: center;
-    border-radius: 1rem;
-    color:var(--blanco);
-}
-.nav-bg {
-    background-color: var(--Secundario);
-    border-radius: 0.3rem;
-}
-.navegacion-principal {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.navegacion-principal a {
-    color: var(--negro);
+.nav-profile__enlace {
     text-decoration: none;
-    font-family: var(--fuentetextos);
-    font-weight: 700;
-    padding: 0.5rem 1rem;
+    color: var(--Terciario);
 }
-a:hover {
-    background-color: var(--Terciario);
-    color: var(--blanco);
+.nav-profile__enlace:hover {
+    color: var(--Primario);
 }
-.contenedor__navegacion {
-    max-width: 120rem;
-    margin: 0 auto;
-}
-.contenedor__header {
-    background-image: url("../img/elderly-care-footer-bg-768x432.jpg");
-    background-repeat:no-repeat;
-    background-position: center;
-    background-size: cover;
-    min-height: 26rem;
-    padding-top: 50%;
-}
-@media (min-width: 480px) {
-    .contenedor__header {
-        background-image: url("../img/elderly-care-footer-bg-1536x864.jpg");
-    }    
-    h2 {
-        font-size: 2.5rem;
-    }
-}
-.contenedor__titulo {
-    background-color: var(--negro_transparente);
-    padding: .3rem;
-}
-.contenedor__titulo h2 {
-    font-size:medium;
-}
-@media (min-width: 480px) {
-    .navegacion-principal{
-        flex-direction: row;
-        justify-content: space-between;    
-    }
-}
-
-*/
-
-/** Contacto**/ /*Antigua web
-.contacto {
-    font-family: var(--fuentetextos);
-    margin: 0 auto;
-}
-.contacto p {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 700;
-}
-.formulario {
-    background-color: var(--Terciario);
-    width: 95%;
-    border-radius: 1rem;
-    padding: 2rem;
-}
-.campo {
-    margin: 0 auto .5rem auto;
-    display: flex;
-    text-align: justify;
-}
-.campo--radio {
-    display: grid;
-    grid-template-columns: 5rem;
-    gap: .5rem;
-}
-.campo__label {
-    flex: 0 0 9rem;
-    text-align: right;
-    padding-right: 1rem;
-}
-.campo__label--informacion {
-    margin-top: 0.5rem;
-    grid-area: 1 / 1 / span 1 / span 2;
-}
-.campo__field {
-    flex: 1;
-}
-.formulario fieldset {
-    border: none;
-}
-*/
