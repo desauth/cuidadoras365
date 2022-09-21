@@ -23,16 +23,6 @@ body {
 html, body {
     min-height: 100%;
 }
-.texto {
-    font-family: var(--fuentetextos);
-}
-.titulo {
-    font-family: var(--fuenteTitulos);
-    margin: 0.5rem auto;
-}
-.fuente__700 {
-    font-weight: bold;
-}
 .contenedor-principal {
     display: grid;
     grid-template-rows: 7% 20% 58% 3.75% 7.5% 3.75%;
@@ -71,12 +61,6 @@ html, body {
 .cierre {
     flex: 0 0 2rem;
 }
-.juntar {
-    margin-left: -.4rem;
-}
-.centrar {
-    text-align: center;
-}
 .campo__busqueda {
     border: none;
     padding-top: .5rem;
@@ -101,7 +85,7 @@ html, body {
     border-color: var(--Terciario);
     min-height: 12rem;
 }
-.nav-bg__a {
+.boton {
     grid-row: 2 / 3;
     text-decoration: none;
     text-align: center;
@@ -111,7 +95,7 @@ html, body {
     margin: 0.5rem;
     transition: background-color .5s ease;
 }
-.nav-bg__a:hover {
+.boton:hover {
     background-color: var(--Primario);
     font-weight: bold;
     color: var(--blanco);
@@ -156,4 +140,29 @@ html, body {
 }
 .nav-profile__enlace:hover {
     color: var(--Primario);
+}
+
+/* Utilidades */
+.texto {
+    font-family: var(--fuentetextos);
+}
+.titulo {
+    font-family: var(--fuenteTitulos);
+    margin: 0.5rem auto;
+}
+.fuente__700 {
+    font-weight: bold;
+}
+.juntar {
+    margin-left: -.4rem;
+}
+.centrar {
+    text-align: center;
+}
+.margen-10 {
+    margin: 1rem;
+}
+.imagen {
+    width: 90%;
+    align-items: center;
 }
