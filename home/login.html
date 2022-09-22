@@ -16,17 +16,56 @@
 </head>
 <body>
     <main>
-        <img class="imagen margen-10" src="../img/logo_alpha_3d.png" alt="Cuidadoras365">
+ <!--
+     <section>
+         <div class="centrar margen-10">
+             <h2 class="titulo titulo__noDisponible fuente__700"> La página que estás viendo aún no está lista, vuelve más tarde</h2>
+         </div>
+     </section>
+-->       
         <section>
-            <p class="titulo centrar margen-10">Ingrese su nombre y usuario</p>
+            <img class="imagen margen-10" src="../img/logo_alpha_3d.png" alt="Cuidadoras365">
+            <form>
+                <fieldset class="formulario">
+                    <legend class="titulo margen-10">Ingrese su nombre y usuario</legend>
+                    <div class="ancho-100">
+                        <div class="contenedor-campos texto">
+                            <label class="" for="">Dirección de correo</label>
+                            <input class="ancho-100" type="email" placeholder="Ingrese su correo electrónico">
+                        </div>    
+                        <div class="contenedor-campos texto">
+                            <label class="" for="">Contraseña</label>
+                            <input class="ancho-100" type="password" placeholder="Tu contraseña">
+                        </div>
+                    </div>
+                </fieldset>
+                    <div class="contenedor-campos centrar margen-10 padding-10">
+                        <a href="javascript:history.back()" class="boton boton__atras texto"> Volver Atrás</a>
+                        <a href="#" class="contenedor-campos__olvidarPW texto">He olvidado la contraseña</a>
+                        <input class="boton texto" type="submit" value="Enviar">
+                    </div>           
+            </form>
+            <div class="centrar margen-10">
+                <h2 class="titulo">o</h2>
+            </div>
+            <div class="contenedor-campos flex-column texto">
+                <a class="boton__RRSS boton__RRSS-google" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-google" width="36" height="36" viewBox="0 0 24 24" stroke-width="3" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M17.788 5.108a9 9 0 1 0 3.212 6.892h-8" />
+                    </svg>
+                    Ingresa con Google
+                </a>
+                <a class="boton__RRSS boton__RRSS-facebook" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-facebook" width="36" height="36" viewBox="0 0 24 24" stroke-width="1" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M7 10v4h3v7h4v-7h3l1 -4h-4v-2a1 1 0 0 1 1 -1h3v-4h-3a5 5 0 0 0 -5 5v2h-3" />
+                    </svg>
+                    Ingresa con Facebook
+                </a>
+            </div>
         </section>
-        <div class="centrar margen-10">
-            <p class="texto">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt laboriosam expedita porro reprehenderit recusandae harum fuga sed! Quis dicta velit, dolore minus accusantium repellendus labore iure, aliquam ad corrupti alias.</p>
-            <p class="titulo"> La página que estás viendo aún no está lista, vuelve más tarde</p>
-        </div>
-        <div class="centrar margen-10">
-            <a href="javascript:history.back()" class="texto boton"> Volver Atrás</a>
-        </div>
+        <h5 class="texto centrar">Cuidadoras365 &copy; - Todos los derechos reservados</h3>
     </main>
 </body>
 </html>
