@@ -87,17 +87,18 @@ html, body {
     margin-bottom: 0.5rem;
 }
 .contenedor-campos label {
-    flex: 0 0 16rem;
+    flex: 0 0 14rem;
     margin: 0.5rem 0;
+    max-width: 14rem;
 }
 .contenedor-campos input {
     flex: 1;
     margin: 0.5rem 0;
 }
 .contenedor-campos__olvidarPW {
-    flex: 0 0 25rem;
-    text-align: right;
-    margin: auto 2.5rem;
+    flex: 0 0 15rem;
+    text-align: left;
+    margin: auto 0;
 }
 /*.contenedor-campos__botonEnviar{
     flex: 1;
@@ -134,7 +135,6 @@ html, body {
     border-radius: 1rem;
     width: 95%;
     margin: 1rem auto;
-    padding: 2rem;
 }
 .home {
     flex: 0 0 7.2rem;
