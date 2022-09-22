@@ -25,6 +25,21 @@ body {
 html, body {
     min-height: 100%;
 }
+hr {
+    display: block;
+    position: relative;
+    padding: 0;
+    margin: .8rem auto;
+    height: 0;
+    width: 100%;
+    max-height: 0;
+    font-size: 1px;
+    line-height: 1;
+    clear: both;
+    border: none;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #ffffff;
+ }
 .boton {
     grid-row: 2 / 3;
     text-decoration: none;
@@ -52,7 +67,7 @@ html, body {
     display: flex;
     text-decoration: none;
     align-items: center;
-    border-radius: 2rem;
+    border-radius: 1rem;
     gap: 2rem;
     padding: 1rem;
     color: white;
@@ -85,6 +100,8 @@ html, body {
 .contenedor-campos {
     display: flex;
     margin-bottom: 0.5rem;
+    gap: 1rem;
+    align-items: center;
 }
 .contenedor-campos label {
     flex: 0 0 14rem;
@@ -95,17 +112,13 @@ html, body {
     flex: 1;
     margin: 0.5rem 0;
 }
-.contenedor-campos__olvidarPW {
-    flex: 0 0 15rem;
-    text-align: left;
-    margin: auto 0;
+.contenedor-campos__OlvidarPW {
+    display: flex;
+    font-size: smaller;
+    justify-content: right;
+    width: 95%;
+    margin: 0 auto;
 }
-/*.contenedor-campos__botonEnviar{
-    flex: 1;
-}*/
-/*.contenedor-campos-enviar {
-    justify-content: space-between;
-}*/
 .contenedor-header {
     grid-row: 1;
 }
@@ -134,7 +147,7 @@ html, body {
 .formulario {
     border-radius: 1rem;
     width: 95%;
-    margin: 1rem auto;
+    margin: 1rem auto 0.5rem;
 }
 .home {
     flex: 0 0 7.2rem;
@@ -223,6 +236,9 @@ html, body {
 }
 .ancho-100{
     width: 100%;
+}
+.ancho-95 {
+    width: 95%;
 }
 .imagen {
     width: 90%;
