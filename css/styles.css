@@ -149,6 +149,27 @@ hr {
 .contenedor-footer {
     grid-row: 4 / 7;
 }
+.contenedor-login {
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 768px) {
+    .contenedor-login {
+        display: grid;
+        flex-direction: row;
+        width: 95%;
+        margin: 0 auto;
+}
+    .contenedor-campos {
+    }
+    .contenedor-login h5 {
+        flex-direction: row;
+    }
+    .imagen__login {
+        max-height: 30rem;
+        max-width: 50rem;
+    }
+}
 .contenedor-principal {
     display: grid;
     /*grid-template-rows: 7% 20% 58% 3.75% 7.5% 3.75%;*/
@@ -302,4 +323,31 @@ hr {
 .flex-column {
     flex-direction: column;
     justify-content: center;
+}
+
+/*LOPD*/
+.titulo__LOPD {
+    font-weight: bold;
+    text-align: center;
+    font-size: 3rem;
+    margin: 3rem auto;
+}
+.contenedor-LOPD,
+.contenedor-LOPD fieldset {
+    margin: 0.5rem;
+    text-align: justify;
+    border: solid 1px;
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+.contenedor-LOPD__checkbox {
+    font-weight: bold;
+    width: 100%;
+    background-color: rgb(155, 155, 155);
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    gap: 0.5rem;
+    border-radius: 0.2rem;
 }
